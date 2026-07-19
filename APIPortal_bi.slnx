@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="apiportal_bi.client/apiportal_bi.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="APIPortal_bi.Server/APIPortal_bi.Server.csproj" />
+  <Project Path="QADBUtility_bi/QADBUtility_bi.csproj" />
+</Solution>

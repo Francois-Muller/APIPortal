@@ -1,0 +1,6 @@
+@QADBUtility_bi_HostAddress = http://localhost:5263
+
+GET {{QADBUtility_bi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QADBUtility_bi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+228559688cac5f419a7c0bf737c01272d2960479")]
 [assembly: System.Reflection.AssemblyProductAttribute("QADBUtility_bi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QADBUtility_bi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

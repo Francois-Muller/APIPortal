@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "FastDraft API Portal",
+  "updatedAt": "2026-07-19T19:00:00Z",
+  "items": [
+    {
+      "id": "CR-0001",
+      "requestedDate": "2026-07-19",
+      "status": "Implemented baseline",
+      "area": "Portal solution migration",
+      "requestSummary": "Move the approved API Portal content into the new Visual Studio React and ASP.NET Core solution.",
+      "decisionSummary": "Migrate the Portal shell, framework dashboard, v0.4.0 guide, Swagger inventory, reporting baseline and governance log. Replace the former Node/Express Portal API with a read-only ASP.NET Core API.",
+      "validationSummary": "Client and server build validation included with the delivery; QADBUtility remains unchanged."
+    },
+    {
+      "id": "CR-0002",
+      "requestedDate": "2026-07-19",
+      "status": "Implemented",
+      "area": "Sidebar interaction",
+      "requestSummary": "Modernise the sidebar search, title icon, active icons, status pill and collapsible groups.",
+      "decisionSummary": "Use an Algolia title icon, right-aligned expanding search, state-coloured source pill, white halo active icons and animated group chevrons in both the Portal shell and hosted guide.",
+      "validationSummary": "Implemented in React CSS/components and in the hosted standalone guide."
+    },
+    {
+      "id": "CR-0003",
+      "requestedDate": "2026-07-19",
+      "status": "Deferred",
+      "area": "QA DB Utility",
+      "requestSummary": "Integrate QA database and BACPAC management.",
+      "decisionSummary": "Keep the QADBUtility project untouched and disconnected until the Portal baseline is accepted.",
+      "validationSummary": "No QADBUtility source file was modified."
+    },
+    {
+      "id": "CR-0004",
+      "requestedDate": "2026-07-19",
+      "status": "Deferred",
+      "area": "Live evidence integration",
+      "requestSummary": "Read current framework reports and runtime logs from configurable sources.",
+      "decisionSummary": "Begin with packaged source-validated JSON and later add allowlisted read-only providers with hashes and safe relative identifiers.",
+      "validationSummary": "No local paths, secrets, framework repository or logs are included."
+    },
+    {
+      "id": "CR-0005",
+      "requestedDate": "2026-07-19",
+      "status": "Implemented",
+      "area": "Guide navigation and interaction",
+      "requestSummary": "Correct the sidebar search icon, modernise section group controls and add working collapse animation.",
+      "decisionSummary": "Use a single always-visible search field with an embedded leading icon and optional clear control. Style group headers as Portal controls with animated chevrons and session-persistent expansion.",
+      "validationSummary": "Covered by React build, lint, static DOM assertions and manual rendered-reference comparison."
+    },
+    {
+      "id": "CR-0006",
+      "requestedDate": "2026-07-19",
+      "status": "Implemented source-evidence review",
+      "area": "Framework Guide content",
+      "requestSummary": "Review framework evidence in detail and expand the React Guide with accurate operating, security, validation, reporting and coverage content.",
+      "decisionSummary": "Expand to nineteen sections using the bundled v0.4.0 report, automation inventory, public API inventory, Swagger inventory and established framework contracts. Include explicit release caveats and recommendations.",
+      "validationSummary": "Counts and percentages are generated from the bundled JSON evidence; no fabricated runtime results are introduced."
+    }
+  ]
+}

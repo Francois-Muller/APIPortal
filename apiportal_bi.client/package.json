@@ -1,13 +1,14 @@
 {
   "name": "apiportal_bi.client",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.3.12",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "react": "^19.2.7",
@@ -26,5 +27,6 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0",
     "vite": "^8.1.1"
-  }
+  },
+  "description": "FastDraft API Portal: source-evidence reviewed React Framework Guide hosted by ASP.NET Core."
 }

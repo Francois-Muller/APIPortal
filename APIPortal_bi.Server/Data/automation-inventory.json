@@ -1,0 +1,45 @@
+{
+  "totalRequests": 294,
+  "sections": {
+    "Foundation": 220,
+    "Authentication": 74
+  },
+  "foundationControllers": [
+    "Action",
+    "ActionMailSubscription",
+    "Alert",
+    "CompanyProjectContract",
+    "CompanyProjectContractResource",
+    "ContractOtherPriceChange",
+    "ContractType",
+    "Proposal",
+    "SecondaryActivity",
+    "SystemLinks",
+    "Version"
+  ],
+  "methods": {
+    "GET": 188,
+    "POST": 46,
+    "PUT": 15,
+    "DELETE": 15,
+    "PATCH": 15,
+    "OPTIONS": 15
+  },
+  "statuses": {
+    "200": 47,
+    "405": 75,
+    "401": 55,
+    "400": 82,
+    "403": 6,
+    "404": 28,
+    "415": 1
+  },
+  "baseUrlCount": 294,
+  "skipTestCalls": 0,
+  "rotateAccountsCalls": 2,
+  "switchAccountCalls": 255,
+  "payloadModeCount": 19,
+  "documented": 294,
+  "uniqueGetRoutes": 15,
+  "parseErrors": []
+}

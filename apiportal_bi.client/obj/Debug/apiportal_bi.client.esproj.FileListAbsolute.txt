@@ -1,0 +1,1 @@
+C:\Development\Active Projects\APIPortal_bi\apiportal_bi.client\obj\Debug\apiportal_bi.client.esproj.CoreCompileInputs.cache

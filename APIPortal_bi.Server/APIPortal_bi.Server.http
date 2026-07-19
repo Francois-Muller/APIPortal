@@ -1,6 +1,19 @@
-@APIPortal_bi.Server_HostAddress = http://localhost:5183
+@APIPortal_bi.Server_HostAddress = https://localhost:7039
 
-GET {{APIPortal_bi.Server_HostAddress}}/weatherforecast/
+GET {{APIPortal_bi.Server_HostAddress}}/api/health
 Accept: application/json
 
 ###
+
+GET {{APIPortal_bi.Server_HostAddress}}/api/framework/summary
+Accept: application/json
+
+###
+
+GET {{APIPortal_bi.Server_HostAddress}}/api/swagger/summary
+Accept: application/json
+
+###
+
+GET {{APIPortal_bi.Server_HostAddress}}/api/swagger/operations?method=GET&q=Action
+Accept: application/json

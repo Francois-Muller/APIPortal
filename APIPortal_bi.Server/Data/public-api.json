@@ -1,0 +1,475 @@
+{
+  "total": 94,
+  "functions": [
+    {
+      "name": "beginMainRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "beginNestedRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "captureMainResponseAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "completeMainRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "completeNestedRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "ensureMainRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "failNestedRequestAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "getAuditRequestMetadata",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "getAuditSettings",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "getAuditTimestamp",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "getCurrentAuditRequest",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logAuditEvent",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logRequestSkip",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logRequestSkipConfigurationFailure",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logRequestSkipControlFailure",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logRequestSkipUnsupported",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logResponseTimeBreach",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logResponseValidationSkipped",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logValidationCheck",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logValidationFailure",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logValidationSkip",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logValidationStart",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logValidationSummary",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "logVariableAudit",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditBearer",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditObject",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditSecret",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditString",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditToken",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "maskAuditValue",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "safeAuditJson",
+      "category": "Audit Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQAAuditScriptLogic.js"
+    },
+    {
+      "name": "AuthenticationErrorValidation",
+      "category": "Authentication Validation",
+      "source": "Scripts/SystemLogic/FastDraftQAResponseScriptLogic.js"
+    },
+    {
+      "name": "AuthenticationValidation",
+      "category": "Authentication Validation",
+      "source": "Scripts/SystemLogic/FastDraftQAResponseScriptLogic.js"
+    },
+    {
+      "name": "CsrfTokenValidation",
+      "category": "Common Response Validation",
+      "source": "Scripts/SystemLogic/FastDraftQACommonResponseScriptLogic.js"
+    },
+    {
+      "name": "ErrorResponseValidation",
+      "category": "Common Response Validation",
+      "source": "Scripts/SystemLogic/FastDraftQACommonResponseScriptLogic.js"
+    },
+    {
+      "name": "PrimaryReadResponseValidation",
+      "category": "Common Response Validation",
+      "source": "Scripts/SystemLogic/FastDraftQACommonResponseScriptLogic.js"
+    },
+    {
+      "name": "applyFoundationTestData",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "derivePasswordVariable",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "getFoundationAccountConfiguration",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "getFoundationTestDataDefaults",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "requireFoundationAccount",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "requireFoundationTestData",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "resolveFoundationTestData",
+      "category": "Foundation Test Data",
+      "source": "Scripts/Helpers/FoundationTestDataController.js"
+    },
+    {
+      "name": "bootstrapFastDraftQAFramework",
+      "category": "Framework Runtime",
+      "source": "Scripts/SystemLogic/index.js"
+    },
+    {
+      "name": "initialiseAzureKeyVault",
+      "category": "Framework Runtime",
+      "source": "Scripts/SystemLogic/index.js"
+    },
+    {
+      "name": "isFrameworkRuntimeReady",
+      "category": "Framework Runtime",
+      "source": "Scripts/SystemLogic/index.js"
+    },
+    {
+      "name": "loadFastDraftQAFrameworkLogic",
+      "category": "Framework Runtime",
+      "source": "Scripts/SystemLogic/index.js"
+    },
+    {
+      "name": "resetFastDraftQAFrameworkLoadFlag",
+      "category": "Framework Runtime",
+      "source": "Scripts/SystemLogic/index.js"
+    },
+    {
+      "name": "bytesToDisplay",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "compactJson",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "fixRequestName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "formatValue",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getApprovedRequestStatusIcons",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getBrunoEnvironmentVariable",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getBrunoVariable",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getCanonicalRequestName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getCurrentRequestName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getOutputModeForResultFormat",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getRequestBody",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getRequestHeaders",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getRequestMetadata",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getRequestMethod",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getRequestUrl",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getResultOutputFormatDisplayName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getSwitchAccountDefinitions",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getUtf8Bytes",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "getValueType",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "hasNoOuterWhitespace",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "hasRequestOption",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "hasUsableOptionValue",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "isValidHttpDate",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "maskBearer",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "maskSecret",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "maskString",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "maskTail",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "maskToken",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "normaliseEmail",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "normaliseResultOutputFormat",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "normaliseTestCaseId",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "normaliseText",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "repeatMask",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "resolveControlledOption",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "rotateAccounts",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "safeJson",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "switchAccount",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "toBoolean",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "truncateForName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "validateRequestName",
+      "category": "Global and Authentication",
+      "source": "Scripts/SystemLogic/FastDraftQAGlobalScriptLogic.js"
+    },
+    {
+      "name": "ensureAutomationRunContext",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    },
+    {
+      "name": "finaliseRequestExecution",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    },
+    {
+      "name": "initialiseAutomationTrace",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    },
+    {
+      "name": "prepareRequestExecution",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    },
+    {
+      "name": "requestExecutionControl",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    },
+    {
+      "name": "skipTest",
+      "category": "Request Lifecycle",
+      "source": "Scripts/SystemLogic/FastDraftQARequestScriptLogic.js"
+    }
+  ]
+}

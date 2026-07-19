@@ -1,0 +1,5289 @@
+{
+  "summary": {
+    "operations": 443,
+    "gets": 142,
+    "controllers": 79,
+    "getControllers": 74
+  },
+  "operations": [
+    {
+      "path": "/api/Action/RegenerateSystemActions",
+      "method": "PATCH",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Action_RegenerateSystemActions",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Action/Create",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Creates an Action or Action Series",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/Delete",
+      "method": "DELETE",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Delete given list of actions",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/Import",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Imports series of an Action requests",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/GetNextPaymentActionsSummary",
+      "method": "GET",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Load the pending actions list of Next Payment Actions",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/LoadClearActionOptions",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Load the pending actions list which are still pending for the given Types",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/RegisterList",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Loads a cutdown list of Action for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/Dashboard",
+      "method": "GET",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Loads all pending actions across all contracts user have access Limited of next 1 calender month",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/GetPendingActions",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Loads pending actions for contract dashboard",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/GetPendingDrafts",
+      "method": "POST",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Returns drafted notifications list in a contract.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/Complete",
+      "method": "PUT",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Sets actions completed for given Actions",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Action/Update",
+      "method": "PUT",
+      "tags": [
+        "Action"
+      ],
+      "summary": "Updates an Action",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActionMailSubscription/CreateSubscription",
+      "method": "POST",
+      "tags": [
+        "ActionMailSubscription"
+      ],
+      "summary": "Created a subscription",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActionMailSubscription/CancelSubscription",
+      "method": "POST",
+      "tags": [
+        "ActionMailSubscription"
+      ],
+      "summary": "Cancel an active Action Mail Subscription",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActionMailSubscription/UpdateSubscription",
+      "method": "POST",
+      "tags": [
+        "ActionMailSubscription"
+      ],
+      "summary": "Update Action Mail Subscription settings",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActionMailSubscription/GetActiveSubscription",
+      "method": "GET",
+      "tags": [
+        "ActionMailSubscription"
+      ],
+      "summary": "Returns the active subscription details for the user if exist",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/SaveActivitySchedule",
+      "method": "POST",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Creates or updates an ActivitySchedule object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/RegenerateContractDateChanges",
+      "method": "PATCH",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "ActivitySchedule_RegenerateContractDateChanges",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/LoadActivitySchedulesAssessmentList",
+      "method": "POST",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "ActivitySchedule_LoadActivitySchedulesAssessmentList",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/GetActivitySchedule",
+      "method": "GET",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Returns a single, specific ActivitySchedule object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/RegisterList",
+      "method": "GET",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Loads list of Contract Dates",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/Update",
+      "method": "PUT",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Updates an existing Contract Activity record.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/LoadActivitySchedulesList",
+      "method": "POST",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Returns a list of ActivitySchedule objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivitySchedule/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "ActivitySchedule"
+      ],
+      "summary": "Returns a list of ActivityScheduleModelAPI_ToSelectList object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Archive/DownloadZipFile",
+      "method": "GET",
+      "tags": [
+        "Archive"
+      ],
+      "summary": "downloads specific contract export data via zip Access is open to authenticated users; actual permission checked in code (ExportAccess flag).",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Archive/GetArchives",
+      "method": "GET",
+      "tags": [
+        "Archive"
+      ],
+      "summary": "Returns a list of ContractExport objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Archive/ArchiveContract",
+      "method": "POST",
+      "tags": [
+        "Archive"
+      ],
+      "summary": "Contract Level Data Exports",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivityDetail/SaveActivityDetail",
+      "method": "POST",
+      "tags": [
+        "ActivityDetail"
+      ],
+      "summary": "Creates or updates an ActivityDetail object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivityDetail/LoadActivityDetailsList",
+      "method": "POST",
+      "tags": [
+        "ActivityDetail"
+      ],
+      "summary": "Returns a list of Activity Detail objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ActivityDetail/GetActivityDetail",
+      "method": "GET",
+      "tags": [
+        "ActivityDetail"
+      ],
+      "summary": "Returns a single, specific Activity Detail object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/Communicate",
+      "method": "PUT",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Communicate Assessment",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/Create",
+      "method": "POST",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Creates an Assessment",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Deletes Draft.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/Import",
+      "method": "POST",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Imports series of an Entity items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/RegisterList",
+      "method": "POST",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Loads a cutdown list of Assessment for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/Get",
+      "method": "GET",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Returns an object AssessmentModelAPI_Get containing the Assessment details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Assessment/Update",
+      "method": "PUT",
+      "tags": [
+        "Assessment"
+      ],
+      "summary": "Update Assessment in draft mode",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Alert/GetAlerts",
+      "method": "GET",
+      "tags": [
+        "Alert"
+      ],
+      "summary": "Returns an Alert object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/BankAccount/SaveBankAccount",
+      "method": "POST",
+      "tags": [
+        "BankAccount"
+      ],
+      "summary": "Creates or updates a Bank Account object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/BankAccount/LoadBankAccountsList",
+      "method": "POST",
+      "tags": [
+        "BankAccount"
+      ],
+      "summary": "Returns a list of Bank Account objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/BankAccount/GetBankAccount",
+      "method": "GET",
+      "tags": [
+        "BankAccount"
+      ],
+      "summary": "Returns a single, specific Bank Account object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Calendar/CancelSubscription",
+      "method": "POST",
+      "tags": [
+        "Calendar"
+      ],
+      "summary": "Cancel an active Calendar Subscription",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Calendar/GenerateSubscriptionURL",
+      "method": "POST",
+      "tags": [
+        "Calendar"
+      ],
+      "summary": "Generates a subscription URL",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Calendar/GetActiveSubscription",
+      "method": "GET",
+      "tags": [
+        "Calendar"
+      ],
+      "summary": "Returns the active subscription details for the user if exist (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Calendar/UpdateSubscriptionURL",
+      "method": "POST",
+      "tags": [
+        "Calendar"
+      ],
+      "summary": "Update Calendar Subscription settings",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Calendar/v1/Get",
+      "method": "GET",
+      "tags": [
+        "Calendar"
+      ],
+      "summary": "VERSION 1 Generates an ICS calendar event and returns it as a downloadable file",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Company/GetCompanyLogoPermission",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "According to the given rules, it returns whether only the system owner has the right to update a company logo",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/CheckIfCompanyNumberExists",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Checks if company number exists for an active company",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/SaveCompany",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Creates or updates a Company object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/SaveCompanyTheme",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Creates or updates a Company theme object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/Import",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Imports series of an Entity items (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/LoadCompanysListIncludingDeactives",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a list of Company objects. (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/LoadCompanysList",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a list of Company objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/ToSelectListFiltered",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a list of CompanyModelListAPI object for use in UI Selects and Dropdowns but filtered for companies associated to company Admin",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a list of CompanyModelListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/GetCompany",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a single, specific Company object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/GetCompanyTheme",
+      "method": "GET",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns a single, specific Company theme object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Company/LoadCompanysListOfUserContracts",
+      "method": "POST",
+      "tags": [
+        "Company"
+      ],
+      "summary": "Returns Unique list of companies objects which users contracts are owned by.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompanyProjectContractResource/GetCompanyProjectContractResource",
+      "method": "GET",
+      "tags": [
+        "CompanyProjectContractResource"
+      ],
+      "summary": "Returns a single, specific CompanyProjectContractResource object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompanyProjectContract/GetCompanyProjectContract",
+      "method": "GET",
+      "tags": [
+        "CompanyProjectContract"
+      ],
+      "summary": "Returns an object of all companies, projects and contracts the user has access to.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Bulk communicate the CompensationEvent draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Bulk deletes the CompensationEvent draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/SaveCompensationEvent",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Creates or updates a CompensationEvent object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/SaveCompensationEventEarlyWarning",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Creates or updates a CompensationEventEarlywarning object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/SaveQuotationActivity",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Creates or updates a QuotationActivity object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Deletes Draft. (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/DeleteCompensationEventEarlyWarning",
+      "method": "DELETE",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Deletes the Compensation Event Early Warning.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/Import",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Imports series of an CompensationEvent items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Loads a cutdown list of CompensationEvent for Register lists (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/RegisterList",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Loads a cutdown list of CompensationEvent for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/LoadCompensationEventsList",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Returns a list of CompensationEvent objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/LoadCompensationEventActivitiesList",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Returns a list of CompensationEventActivity objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/LoadCompensationEventEarlyWarningList",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Returns a list of CompensationEventEarlyWarning objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/ToSelectList",
+      "method": "POST",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Returns a list of CompensationEventListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CompensationEvent/GetCompensationEvent",
+      "method": "GET",
+      "tags": [
+        "CompensationEvent"
+      ],
+      "summary": "Returns a single, specific CompensationEvent object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (PUT)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (DELETE)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/SaveCertificate",
+      "method": "POST",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Creates or updates a Certificate object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Deletes Draft. (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/Import",
+      "method": "POST",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Imports series of an Entity items (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/LoadCertificatesList",
+      "method": "POST",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Returns a list of Certificate objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/GetCertificate",
+      "method": "GET",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "Returns a single, specific Certificate object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Certificate/Update",
+      "method": "POST",
+      "tags": [
+        "Certificate"
+      ],
+      "summary": "updates an existing certificate.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/SaveForecastSpecifics",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Contract_SaveForecastSpecifics",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Contract/LoadContractsForCompany",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Controller method to retrieve a list contract select options for given company with short model objects Ideal for listing company contract options dropdown",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/LoadContractsForProject",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Controller method to retrieve a list contract select options for given project with short model objects Ideal for listing company contract options dropdown",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/CloneContract",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Creates a clone of an existing contract",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/SaveContract",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Creates or updates a Contract object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/Import",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Imports series of an Entity items (3)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Load contract options for selectbox account has access to",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/RegisterList",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Loads a cutdown list of Contract for Register lists Primarily used for the main contract list dashboard",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/Contracts_LoadDashboard",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns a custom reduced list of ContractModelAPI object containing the contract details. Primarily used for the main contract list dashboard",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Contract/LoadContractsList",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns a list of Contract objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/SaveContractSpecifics",
+      "method": "POST",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns a list of ContractModelAPI object containing the contract details in JSON format for datatables.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Contract/Load",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns a single, specific Contract object by ID. (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/GetContract",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns a single, specific Contract object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Contract/RequestToEmail",
+      "method": "GET",
+      "tags": [
+        "Contract"
+      ],
+      "summary": "Returns the FastDraft inbound email address (\"To\") and routing token for the authenticated user and contract.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/RegenerateContractPriceChanges",
+      "method": "PATCH",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "ContractOtherPrice_RegenerateContractPriceChanges",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/Create",
+      "method": "POST",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Creates or updates an ContractOtherPrice object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/Delete",
+      "method": "DELETE",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Deletes an existing Contract Other Price record.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/GetContractOtherPriceChangeSummary",
+      "method": "GET",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Returns a list of contract price changes per currency, Designed for reporting summaries on Dashboard",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/LoadContractOtherPriceList",
+      "method": "GET",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Returns a list of ContractOtherPriceModelAPI_RegisterList objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Returns a list of ContractOtherPriceModelAPI_ToSelectList object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/GetContractOtherPrice",
+      "method": "GET",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Returns an object ContractOtherPriceModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPrice/Update",
+      "method": "PUT",
+      "tags": [
+        "ContractOtherPrice"
+      ],
+      "summary": "Updates an existing Contract Other Price record. this supercedes the Save command for edits",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractOtherPriceChange/LoadChanges",
+      "method": "GET",
+      "tags": [
+        "ContractOtherPriceChange"
+      ],
+      "summary": "Load change logs associated to given contractotherpriceid",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractHubUser/SaveContractHubUser",
+      "method": "POST",
+      "tags": [
+        "ContractHubUser"
+      ],
+      "summary": "Creates or updates the Contract Hub User.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractHubUser/LoadContractHubUserList",
+      "method": "POST",
+      "tags": [
+        "ContractHubUser"
+      ],
+      "summary": "Returns a list of ContractHubUser objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractTemplate/Get",
+      "method": "GET",
+      "tags": [
+        "ContractTemplate"
+      ],
+      "summary": "Returns Contract TemplateJSON as a string.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractRecipient/SaveContractRecipient",
+      "method": "POST",
+      "tags": [
+        "ContractRecipient"
+      ],
+      "summary": "Creates or updates a ContractRecipient objcet.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractRecipient/LoadContractRecipientList",
+      "method": "GET",
+      "tags": [
+        "ContractRecipient"
+      ],
+      "summary": "Returns a list of Contract Recipient objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractRecipient/GetContractRecipient",
+      "method": "GET",
+      "tags": [
+        "ContractRecipient"
+      ],
+      "summary": "Returns a single, specific ContractRecipient object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractGenericDraft/Assign",
+      "method": "PUT",
+      "tags": [
+        "ContractGenericDraft"
+      ],
+      "summary": "Assign Generic drafts to specific workflows",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractGenericDraft/Delete",
+      "method": "DELETE",
+      "tags": [
+        "ContractGenericDraft"
+      ],
+      "summary": "Delete given draft",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractGenericDraft/RegisterList",
+      "method": "POST",
+      "tags": [
+        "ContractGenericDraft"
+      ],
+      "summary": "Loads a cutdown list of ContractGenericDraft for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractType/Save",
+      "method": "PUT",
+      "tags": [
+        "ContractType"
+      ],
+      "summary": "Creates or updates a Contract type record.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractType/Get",
+      "method": "GET",
+      "tags": [
+        "ContractType"
+      ],
+      "summary": "Get Contract type record.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractType/GetList",
+      "method": "GET",
+      "tags": [
+        "ContractType"
+      ],
+      "summary": "Return list of Contract type records",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/AddUserToMultipleContracts",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Assigns a user to multiple contracts.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/SaveContractUser",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Creates or updates a ContractUser object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/SwitchRole",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "For admins to impersonate differing roles on a contract This deletes any ContractUser references for the logged in user, then adds a new ContractUser record with the passed in permissions",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/Import",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Imports series of an Entity items (4)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/RegisterList",
+      "method": "GET",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Loads a cutdown list of ContractUser for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/Delete",
+      "method": "DELETE",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Removes the given Contract User from the contract",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/LoadContractUserList",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Returns a list of Contract User objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractUser/LoadContractsNotAssignedToList",
+      "method": "POST",
+      "tags": [
+        "ContractUser"
+      ],
+      "summary": "Returns a list of Contracts a user is not currently assigned to objects, including tag support and caching similar to RegisterList.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractSecurityGroupUser/SaveContractSecurityGroupUser",
+      "method": "POST",
+      "tags": [
+        "ContractSecurityGroupUser"
+      ],
+      "summary": "Creates or updates the Contract Security Group User.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ContractSecurityGroupUser/LoadContractSecurityGroupUserList",
+      "method": "POST",
+      "tags": [
+        "ContractSecurityGroupUser"
+      ],
+      "summary": "Returns a list of ContractSecurityGroupUser objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/SaveEarlyWarning",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Creates or updates an Early Warning object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Deletes Draft. (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/Import",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Imports series of an Entity items (5)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/RegisterList",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Loads a cutdown list of EarlyWarning for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/LoadEarlyWarningsList",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Returns a list of EarlyWarning objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Returns a list of EarlyWarningModelListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/GetEarlyWarning",
+      "method": "GET",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Returns a single, specific EarlyWarning object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/ResolveRiskUpdate",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Sets resolved date and status for given EarlyWarning.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarning/UpdateRisk",
+      "method": "POST",
+      "tags": [
+        "EarlyWarning"
+      ],
+      "summary": "Updates risk fields for given EarlyWarning.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Dashboard/GetDashboard",
+      "method": "GET",
+      "tags": [
+        "Dashboard"
+      ],
+      "summary": "Gets a single, specific Dashboard object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/CustomField/ChangeOrder",
+      "method": "PUT",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Change the index order of CustomField definition within the same form fields",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/ChangeObject",
+      "method": "PUT",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Change the owner form definition of an existing CustomField this will move one field from one form to another form",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/Create",
+      "method": "POST",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Creates a CustomField",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/Delete",
+      "method": "DELETE",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Delete is only possible if no data has been captured(locked) for the field",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/LoadByCompany",
+      "method": "GET",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Load Customfields with calculated label, without detailed label etc. definitions",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/LoadCompanySettings",
+      "method": "GET",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Load Customfields with detailed label resource definitions Must be preferred for adminisrtrative operations",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/GetCustomFieldToAndCcValuesBySubType",
+      "method": "GET",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Load email addresses of Customfields' single and multiple contract users (GET)",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/GetCustomFieldToAndCcValues",
+      "method": "GET",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Load email addresses of Customfields' single and multiple contract users",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/CustomField/Save",
+      "method": "POST",
+      "tags": [
+        "CustomField"
+      ],
+      "summary": "Save changes on CustomField definition Changes are limited if the item has been used(Locked) on customized forms",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/DocumentAttachment/UploadDocumentAttachment",
+      "method": "POST",
+      "tags": [
+        "DocumentAttachment"
+      ],
+      "summary": "Accepts the document object and uploads the file.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/DocumentAttachment/LoadDocumentAttachmentsList",
+      "method": "POST",
+      "tags": [
+        "DocumentAttachment"
+      ],
+      "summary": "Returns a list of DocumentAttachment objects",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarningReduction/SaveEarlyWarningReduction",
+      "method": "POST",
+      "tags": [
+        "EarlyWarningReduction"
+      ],
+      "summary": "Creates an EarlyWarningReduction object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarningReduction/LoadEarlyWarningReductionsList",
+      "method": "POST",
+      "tags": [
+        "EarlyWarningReduction"
+      ],
+      "summary": "Returns a list of EarlyWarningReduction objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarningReduction/GetLastEarlyWarningReduction",
+      "method": "GET",
+      "tags": [
+        "EarlyWarningReduction"
+      ],
+      "summary": "Returns a single, Last inserted EarlyWarningReduction object by WarningID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/EarlyWarningReduction/GetEarlyWarningReduction",
+      "method": "GET",
+      "tags": [
+        "EarlyWarningReduction"
+      ],
+      "summary": "Returns a single, specific EarlyWarningReduction object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Document/SaveDocument",
+      "method": "POST",
+      "tags": [
+        "Document"
+      ],
+      "summary": "Creates or updates a Document object",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Document/SaveNewRevision",
+      "method": "POST",
+      "tags": [
+        "Document"
+      ],
+      "summary": "Creates or updates a Document revision.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Document/LoadDocumentsList",
+      "method": "POST",
+      "tags": [
+        "Document"
+      ],
+      "summary": "Returns a list of Document objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Document/GetDocument",
+      "method": "GET",
+      "tags": [
+        "Document"
+      ],
+      "summary": "Returns a single, specific Document object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/File/UploadExternalFile",
+      "method": "POST",
+      "tags": [
+        "File"
+      ],
+      "summary": "Accepts a document object and uploads the file. (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/File/UploadFile",
+      "method": "POST",
+      "tags": [
+        "File"
+      ],
+      "summary": "Accepts a document object and uploads the file.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/File/DeleteExternalFile",
+      "method": "POST",
+      "tags": [
+        "File"
+      ],
+      "summary": "Deletes external file.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/File/DeleteFile",
+      "method": "POST",
+      "tags": [
+        "File"
+      ],
+      "summary": "Deletes file.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/File/GetDownloadUrl",
+      "method": "GET",
+      "tags": [
+        "File"
+      ],
+      "summary": "Gets a near single use url, valid only for 30 seconds for downloading the specified file.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/File/LoadFilesList",
+      "method": "POST",
+      "tags": [
+        "File"
+      ],
+      "summary": "Returns a list of File objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/SaveForecast",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Creates or updates a Forecast object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Deletes Draft. (3)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/Import",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Imports series of an Entity items (6)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Loads a cutdown list of Forecast for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/LoadForecastsList",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Returns a list of Forecast objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/GetForecast",
+      "method": "GET",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Returns a single, specific Forecast object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Forecast/GetLastForecastAmounts",
+      "method": "POST",
+      "tags": [
+        "Forecast"
+      ],
+      "summary": "Returns last Cost Forecast amounts per given type",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Bulk communicate the Forecast draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Bulk deletes the Forecast draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/BatchCreateDrafts",
+      "method": "POST",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Creates forecastmultipleprojectorders. Leave ForecastID blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/Import",
+      "method": "POST",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Imports series of an Forecast items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/RegisterList",
+      "method": "GET",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Loads a cutdown list of ForecastBatch for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/BatchNotify",
+      "method": "POST",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Notifies all Forecasts in the Batch",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/BatchGetDrafts",
+      "method": "GET",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Returns all Forecasts for a given ForecastBatchID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ForecastBatch/Get",
+      "method": "GET",
+      "tags": [
+        "ForecastBatch"
+      ],
+      "summary": "Returns an object ForecastBatchModelAPI_Get containing the ForecastBatch details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/HubspotIntegration/GetMonthlyUpdateObjects",
+      "method": "GET",
+      "tags": [
+        "HubspotIntegration"
+      ],
+      "summary": "Creates a list of objects to be returned as part of monthly hubspot contact updates.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Bulk communicate the InstructionToQuote draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Bulk deletes the InstructionToQuote draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/Create",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Creates a InstructionToQuote object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Deletes Draft. (5)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/Import",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Imports series of an InstructionToQuote items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/RegisterList",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Loads a list of InstructionToQuote for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/LoadInstructionToQuotesList",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Returns a list of InstructionToQuote objects.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/GetInstructionToQuote",
+      "method": "GET",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Returns a single, specific InstructionToQuote object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuote/Update",
+      "method": "PUT",
+      "tags": [
+        "InstructionToQuote"
+      ],
+      "summary": "Updates a InstructionToQuote object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/SaveInternalEstimate",
+      "method": "POST",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Creates an InternalEstimate.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/MarkAsSuperseded",
+      "method": "POST",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Manually supersedes an active internal estimate.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/LoadInternalEstimatesList",
+      "method": "POST",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Returns a list of InternalEstimateModelAPI object containing the internal estimate details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/GetInternalEstimateHistory",
+      "method": "GET",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Returns a list of InternalEstimateModelAPI objects representing the full history of a specific change lineage.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/GetInternalEstimate",
+      "method": "GET",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Returns an object InternalEstimateModelAPI containing the internalestimate details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/GetActiveEstimate",
+      "method": "GET",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Returns the single active internal estimate that is currently contributing to the budget for a specific lineage.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InternalEstimate/UpdateInternalEstimate",
+      "method": "PUT",
+      "tags": [
+        "InternalEstimate"
+      ],
+      "summary": "Updates an InternalEstimate. Provide a valid existing InternalEstimateID to update.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/BulkActivate",
+      "method": "PUT",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Bulk activates the Entity for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/BulkDeactivate",
+      "method": "PUT",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Bulk deactivates the Entity for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/GetChained",
+      "method": "GET",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Controller method to retrieve a list of notifications linked to a specific asset",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/GetAsset",
+      "method": "GET",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Controller method to retrieve a single asset by id.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/GetAssets",
+      "method": "GET",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Controller method to retrieve all assets by company id, project and contract id",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/Import",
+      "method": "POST",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Imports series of an Entity items (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Asset/RegisterList",
+      "method": "GET",
+      "tags": [
+        "Asset"
+      ],
+      "summary": "Loads list of Contract Assets",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Mask/SaveMask",
+      "method": "POST",
+      "tags": [
+        "Mask"
+      ],
+      "summary": "Creates or updates the mask. Provide a valid existing MaskID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Mask/LoadMasksList",
+      "method": "POST",
+      "tags": [
+        "Mask"
+      ],
+      "summary": "Returns a list of MaskModelAPI object containing the mask details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Mask/GetMask",
+      "method": "GET",
+      "tags": [
+        "Mask"
+      ],
+      "summary": "Returns an object MaskModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (3)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (3)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/SaveInspectionDefect",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Creates or updates the inspectiondefect. Provide a valid existing InspectionDefectID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/GetInspectionDefectV2",
+      "method": "GET",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Creates or updates the inspectiondefect.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Deletes Draft. (4)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/Import",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Imports series of an Entity items (7)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Loads a cutdown list of InspectionDefects for Register lists (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/RegisterList",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Loads a cutdown list of InspectionDefects for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Returns a list of InspectionDefectListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/LoadInspectionDefectsList",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Returns a list of InspectionDefectModelAPI object containing the inspectiondefect details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/GetInspectionDefect",
+      "method": "GET",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "Returns an object InspectionDefectModelAPI containing the inspectiondefect details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/UpdateDefectAction",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "updates an existing inspectiondefect. (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/PlannedClosureUpdate",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "updates an existing inspectiondefect. (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/CloseDefect",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "updates an existing inspectiondefect. (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/Update",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "updates an existing inspectiondefect.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InspectionDefect/UpdateConformanceAction",
+      "method": "POST",
+      "tags": [
+        "InspectionDefect"
+      ],
+      "summary": "updates conformnce action.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (4)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (4)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/Create",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Creates the quotation.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Deletes Draft. (6)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/Import",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Imports series of an Entity items (8)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/RegisterList",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Loads a list of ITQQuotation for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/LoadItqQuotationsList",
+      "method": "POST",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Returns a list of ItqQuotationModelAPI object .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/GetAcceptedQuotation",
+      "method": "GET",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Returns an object ItqQuotationModelAPI . (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/GetItqQuotation",
+      "method": "GET",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Returns an object ItqQuotationModelAPI .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/InstructionToQuoteQuotation/Update",
+      "method": "PUT",
+      "tags": [
+        "InstructionToQuoteQuotation"
+      ],
+      "summary": "Updates the quotation. Provide a valid existing QuotationID to update.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Option/GetPrivateOption",
+      "method": "GET",
+      "tags": [
+        "Option"
+      ],
+      "summary": "Returns the private OPTIONS for the dropdown lists / selects for all items.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Option/GetPublicOption",
+      "method": "GET",
+      "tags": [
+        "Option"
+      ],
+      "summary": "Returns the public OPTIONS for the dropdown lists / selects for all items.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Bulk communicate the PaymentCertificate draft orders for given PK Array (PUT)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Bulk deletes the PaymentCertificate draft orders for given PK Array (DELETE)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/SavePaymentCertificate",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Creates paymentcertificate. Update has moved to PaymentCertificate/update",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Deletes Draft. (7)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/Import",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Imports series of an PaymentCertificate items (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/RegisterList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Loads a cutdown list of PaymentCertificate for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPurchaseOrderDetailList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format for datatables. (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPaymentSummaryList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format for datatables. (2)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPackagedPaymentCertifiedList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format for datatables. (3)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPurchaseOrderList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format for datatables. (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPaymentCertifiedList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format for datatables.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/LoadPaymentCertificatesList",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns a list of PaymentCertificateModelAPI object containing the payment certificate details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/GetPaymentCertificateV2",
+      "method": "GET",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns an object PaymentCertificateModelAPI containing the paymentcertificate details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/GetLastPaymentAmounts",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Returns last Applied / Certified amounts per given currency and type",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentCertificate/Update",
+      "method": "POST",
+      "tags": [
+        "PaymentCertificate"
+      ],
+      "summary": "Updates an existing PaymentCertificate record",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PDF/RegeneratePDF",
+      "method": "POST",
+      "tags": [
+        "PDF"
+      ],
+      "summary": "Regenerates a PDF from existing notices data. Assumes notice communication has occurred.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PDF/GetPDF",
+      "method": "GET",
+      "tags": [
+        "PDF"
+      ],
+      "summary": "Returns a single, specific PDF object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentRetention/SavePaymentRetention",
+      "method": "POST",
+      "tags": [
+        "PaymentRetention"
+      ],
+      "summary": "Creates or updates the payment retention.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentRetention/LoadPaymentRetentionsList",
+      "method": "POST",
+      "tags": [
+        "PaymentRetention"
+      ],
+      "summary": "Returns a list of PaymentRetentionModelAPI object containing the payment retention details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentRetention/LoadPaymentRetentionsAssessmentList",
+      "method": "POST",
+      "tags": [
+        "PaymentRetention"
+      ],
+      "summary": "Returns a list of PaymentRetentionModelAPI object containing the payment retentions assessment details in JSON format for datatables.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentRetention/GetPaymentRetention",
+      "method": "GET",
+      "tags": [
+        "PaymentRetention"
+      ],
+      "summary": "Returns an object PaymentRetentionModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Picture/GetPicture",
+      "method": "GET",
+      "tags": [
+        "Picture"
+      ],
+      "summary": "obsolete, do not use",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Picture/UploadPicture",
+      "method": "POST",
+      "tags": [
+        "Picture"
+      ],
+      "summary": "saves a pciture to blob storage",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Picture/GetPictureFromNotification",
+      "method": "GET",
+      "tags": [
+        "Picture"
+      ],
+      "summary": "Used to get the company logo and company name from a specific notification",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Picture/GetPictureV2",
+      "method": "GET",
+      "tags": [
+        "Picture"
+      ],
+      "summary": "used to get the logo from a given category only uses model.Type and model.Reference",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/PowerBICustomBookmarkView/DeletePowerBICustomBookmarkView",
+      "method": "DELETE",
+      "tags": [
+        "PowerBICustomBookmarkView"
+      ],
+      "summary": "Deletes power bi custom bookmark view",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBICustomBookmarkView/LoadPowerBICustomBookmarkViewByName",
+      "method": "GET",
+      "tags": [
+        "PowerBICustomBookmarkView"
+      ],
+      "summary": "Load power bi custom bookmark view by name",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBICustomBookmarkView/LoadPowerBICustomBookmarkViews",
+      "method": "GET",
+      "tags": [
+        "PowerBICustomBookmarkView"
+      ],
+      "summary": "Loads power bi custom bookmark views",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBICustomBookmarkView/SavePowerBICustomBookmarkView",
+      "method": "POST",
+      "tags": [
+        "PowerBICustomBookmarkView"
+      ],
+      "summary": "Saves power bi custom bookmark view",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Bulk communicate the PaymentCertificate draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Bulk deletes the PaymentCertificate draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/BatchCreateDrafts",
+      "method": "POST",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Creates paymentcertificatemultiplecurrencies. Leave PaymentCertificateID blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/Import",
+      "method": "POST",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Imports series of an PaymentCertificate items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/RegisterList",
+      "method": "GET",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Loads a cutdown list of PaymentBatch for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/BatchNotify",
+      "method": "POST",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Notifies all PaymentCertificates in the Batch",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/BatchGetDrafts",
+      "method": "GET",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Returns all Payment Certificates for a given PaymentBatchID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PaymentBatch/Get",
+      "method": "GET",
+      "tags": [
+        "PaymentBatch"
+      ],
+      "summary": "Returns an object PaymentBatchModelAPI_Get containing the PaymentBatch details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBIExport/ExportReport",
+      "method": "POST",
+      "tags": [
+        "PowerBIExport"
+      ],
+      "summary": "Creates a new power bi report export via the powerbi middleware",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBIExport/ExportDownload",
+      "method": "POST",
+      "tags": [
+        "PowerBIExport"
+      ],
+      "summary": "Downloads the selected report in the required format",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBIExport/ExportStatus",
+      "method": "POST",
+      "tags": [
+        "PowerBIExport"
+      ],
+      "summary": "Gets a list of all power bi export for the user with the current export status",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceList/Create",
+      "method": "POST",
+      "tags": [
+        "PriceList"
+      ],
+      "summary": "Creates a Price List.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceList/Delete",
+      "method": "DELETE",
+      "tags": [
+        "PriceList"
+      ],
+      "summary": "Deletes a Price List.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceList/GetPriceList",
+      "method": "GET",
+      "tags": [
+        "PriceList"
+      ],
+      "summary": "Gets a specific PriceList based on PriceListID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceList/RegisterList",
+      "method": "GET",
+      "tags": [
+        "PriceList"
+      ],
+      "summary": "Loads a list of PriceLists based on ContractID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceList/Update",
+      "method": "PUT",
+      "tags": [
+        "PriceList"
+      ],
+      "summary": "Updates a Price List.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProfilePicture/UploadProfilePicture",
+      "method": "POST",
+      "tags": [
+        "ProfilePicture"
+      ],
+      "summary": "Accepts the profile picture object and uploads the file.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/ProfilePicture/GetProfilePicture",
+      "method": "GET",
+      "tags": [
+        "ProfilePicture"
+      ],
+      "summary": "Returns the profile picture of the loggedin user as a base64 string.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/PowerBI/Global",
+      "method": "GET",
+      "tags": [
+        "PowerBI"
+      ],
+      "summary": "Performs a global search against the regional SearchDB SearchDocument index, scoped to the current instance, and filtered by the caller's contract access via fnAccessAllowed.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceListItem/Create",
+      "method": "POST",
+      "tags": [
+        "PriceListItem"
+      ],
+      "summary": "Creates a Price List Item on an existing Price List.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceListItem/Delete",
+      "method": "DELETE",
+      "tags": [
+        "PriceListItem"
+      ],
+      "summary": "Deletes a Price List Item.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceListItem/GetPriceListItem",
+      "method": "GET",
+      "tags": [
+        "PriceListItem"
+      ],
+      "summary": "Gets a specific PriceListItem based on PriceListItemID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceListItem/RegisterList",
+      "method": "GET",
+      "tags": [
+        "PriceListItem"
+      ],
+      "summary": "Loads a list of PriceListItems based on PriceListID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PriceListItem/Update",
+      "method": "PUT",
+      "tags": [
+        "PriceListItem"
+      ],
+      "summary": "Updates a Price List Item.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (5)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (5)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/SaveProgram",
+      "method": "POST",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Creates the program record. Leave ProgramID blank to create. Update has moved to Program/Update",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/Import",
+      "method": "POST",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Imports series of an Entity items (9)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Program_DeleteDraft",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/LoadProgramsList",
+      "method": "POST",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Returns a list of ProgramModelAPI object containing the program details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/GetProgram",
+      "method": "GET",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Returns an object ProgramModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Program/Update",
+      "method": "POST",
+      "tags": [
+        "Program"
+      ],
+      "summary": "Updates an existing Program record",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/PowerBIReportingClient/CreateOrRotateSecret",
+      "method": "POST",
+      "tags": [
+        "PowerBIReportingClient"
+      ],
+      "summary": "Creates or rotates Power BI reporting client credentials for a FastDraft user.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/PowerBIReportingClient/GetContractGlobal",
+      "method": "GET",
+      "tags": [
+        "PowerBIReportingClient"
+      ],
+      "summary": "Returns contracts that a user can see in all instances.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/PowerBIReportingClient/Get",
+      "method": "GET",
+      "tags": [
+        "PowerBIReportingClient"
+      ],
+      "summary": "Users can see their current Client ID and request a new credential pair when needed. The client secret is only shown at creation time for security reasons.",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Bulk communicate the ProjectOrder draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Bulk deletes the ProjectOrder draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/Create",
+      "method": "POST",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Creates a Project Order. Leave ProjectOrderID blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Deletes Draft. (8)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/Import",
+      "method": "POST",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Imports series of an ProjectOrder items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Loads a cutdown list of ProjectOrder for Register lists (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/RegisterList",
+      "method": "POST",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Loads a cutdown list of ProjectOrder for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/RegisterPackagedList",
+      "method": "GET",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "ProjectOrder Packaged details Register List",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Returns a list of ProjectOrderListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/GetProjectOrder",
+      "method": "GET",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Returns an object ProjectOrderModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectOrder/Update",
+      "method": "PUT",
+      "tags": [
+        "ProjectOrder"
+      ],
+      "summary": "Updates an existing Project Order record. this supercedes the Save command for edits",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectManagementInstruction/SaveProjectManagementInstruction",
+      "method": "POST",
+      "tags": [
+        "ProjectManagementInstruction"
+      ],
+      "summary": "Creates or updates the Project Management Instruction. Provide a valid existing ProjectManagementInstructionID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectManagementInstruction/LoadProjectManagementInstructionsList",
+      "method": "POST",
+      "tags": [
+        "ProjectManagementInstruction"
+      ],
+      "summary": "Returns a list of ProjectManagementInstructionModelAPI",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ProjectManagementInstruction/GetProjectManagementInstruction",
+      "method": "GET",
+      "tags": [
+        "ProjectManagementInstruction"
+      ],
+      "summary": "Returns an object ProjectManagementInstructionModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (7)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (7)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/SaveQuotation",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Creates a new quotation record. Leave QuotationID blank to create. Update has moved to Quotation/Update",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/SaveQuotationActivity",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Creates or updates the QuotationActivity.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Deletes Draft. (10)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/Import",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Imports series of an Entity items (12)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/RegisterList",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Loads a cutdown list of Quotation for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/LoadQuotationActivitiesList",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns a list of QuotationActivityModelAPI object .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/LoadAllQuotationsList",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns a list of QuotationModelAPI object containing the contract details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/LoadQuotationsList",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns a list of QuotationModelAPI object .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/LoadAllQuotationsIncludingCompensationEventList",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns a list of QuotationModelAPI",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/GetAcceptedQuotation",
+      "method": "GET",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns an object QuotationModelAPI . (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/GetQuotation",
+      "method": "GET",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Returns an object QuotationModelAPI .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Quotation/Update",
+      "method": "POST",
+      "tags": [
+        "Quotation"
+      ],
+      "summary": "Updates an existing Quotation record",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Project/SaveProject",
+      "method": "POST",
+      "tags": [
+        "Project"
+      ],
+      "summary": "Creates or updates the project. Provide a valid existing ProjectID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Project/Import",
+      "method": "POST",
+      "tags": [
+        "Project"
+      ],
+      "summary": "Imports series of an Entity items (10)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Project/LoadProjectsList",
+      "method": "POST",
+      "tags": [
+        "Project"
+      ],
+      "summary": "Returns a list of ProjectModelAPI object containing the project details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Project/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "Project"
+      ],
+      "summary": "Returns a list of ProjectModelListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Project/GetProject",
+      "method": "GET",
+      "tags": [
+        "Project"
+      ],
+      "summary": "Returns an object ProjectModelAPI containing the project details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Relationship/GetChainedRelationships",
+      "method": "GET",
+      "tags": [
+        "Relationship"
+      ],
+      "summary": "Controller method to retrieve a list of chained relationships",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Relationship/GetRelationships",
+      "method": "GET",
+      "tags": [
+        "Relationship"
+      ],
+      "summary": "Controller method to retrieve a relationship based on it's unique ID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Relationship/SaveRelationships",
+      "method": "POST",
+      "tags": [
+        "Relationship"
+      ],
+      "summary": "Creates a relationship.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Relationship/RelationItemsList",
+      "method": "POST",
+      "tags": [
+        "Relationship"
+      ],
+      "summary": "returns a cut down list of a given table dataset for linking as a relation to a notification",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (6)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (6)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/SaveProposal",
+      "method": "POST",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Creates or updates the Proposal. Provide a valid existing ProposalID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Deletes Draft. (9)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/Import",
+      "method": "POST",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Imports series of an Entity items (11)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/LoadProposalsList",
+      "method": "POST",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Returns a list of ProposalModelAPI#",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/GetProposal",
+      "method": "GET",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Returns an object ProposalModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Proposal/Update",
+      "method": "POST",
+      "tags": [
+        "Proposal"
+      ],
+      "summary": "Updates an existing Proposal record",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Register/DeleteRegister",
+      "method": "POST",
+      "tags": [
+        "Register"
+      ],
+      "summary": "delete a specific report record",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/DownloadRegister",
+      "method": "GET",
+      "tags": [
+        "Register"
+      ],
+      "summary": "downloads a specific aggregate report in a zip",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/CreateScheduledRegister",
+      "method": "POST",
+      "tags": [
+        "Register"
+      ],
+      "summary": "Endpoint to create a scheduled aggregate report",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/DownloadRegisterSecure",
+      "method": "GET",
+      "tags": [
+        "Register"
+      ],
+      "summary": "Endpoint to facilitate the downloading of scheduled registers from generated emails",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/DeleteScheduledRegister",
+      "method": "POST",
+      "tags": [
+        "Register"
+      ],
+      "summary": "Endpoint to set a schedule to inactive",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/CreateRegister",
+      "method": "POST",
+      "tags": [
+        "Register"
+      ],
+      "summary": "Request the creation of an aggregate report for download",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/GetRegisterList",
+      "method": "GET",
+      "tags": [
+        "Register"
+      ],
+      "summary": "return a list of reports and their status generated by the currently authenticated user",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/GetRegister",
+      "method": "GET",
+      "tags": [
+        "Register"
+      ],
+      "summary": "returns a specific aggregate report record",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Register/GetScheduledRegisters",
+      "method": "GET",
+      "tags": [
+        "Register"
+      ],
+      "summary": "Returns the list of scheduled aggregate reports",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Report/SaveReport",
+      "method": "POST",
+      "tags": [
+        "Report"
+      ],
+      "summary": "Creates or updates the report. Provide a valid existing ReportID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Report/LoadReportsList",
+      "method": "POST",
+      "tags": [
+        "Report"
+      ],
+      "summary": "Returns a list of ReportModelAPI object",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Report/GetCompany",
+      "method": "GET",
+      "tags": [
+        "Report"
+      ],
+      "summary": "Returns an object ReportModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Bulk communicate the RequestForQuote draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Bulk deletes the RequestForQuote draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/SaveRequestForQuote",
+      "method": "POST",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Creates or updates a RequestForQuote object.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Deletes Draft. (11)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/Import",
+      "method": "POST",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Imports series of an RequestForQuote items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/RegisterList",
+      "method": "POST",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Loads a cutdown list of RequestForQuote for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/LoadRequestForQuotesList",
+      "method": "POST",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Returns a list of RequestForQuote objects. This end point is deprecated and will be removed in a future release",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuote/GetRequestForQuote",
+      "method": "GET",
+      "tags": [
+        "RequestForQuote"
+      ],
+      "summary": "Returns a single, specific RequestForQuote object by ID.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Bulk communicate the Entity draft orders for given PK Array (8)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Bulk deletes the Entity drafts for given PK Array (8)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/SaveRfqQuotation",
+      "method": "POST",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Creates or updates the quotation. Provide a valid existing QuotationID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Deletes Draft. (12)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/Import",
+      "method": "POST",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Imports series of an Entity items (13)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Loads a cutdown list of RfqQuotation for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/LoadRfqQuotationsList",
+      "method": "POST",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Returns a list of RfqQuotationModelAPI object .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/GetAcceptedQuotation",
+      "method": "GET",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Returns an object RfqQuotationModelAPI . (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/RequestForQuoteQuotation/GetRfqQuotation",
+      "method": "GET",
+      "tags": [
+        "RequestForQuoteQuotation"
+      ],
+      "summary": "Returns an object RfqQuotationModelAPI .",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ReturnDetail/SaveReturnDetail",
+      "method": "POST",
+      "tags": [
+        "ReturnDetail"
+      ],
+      "summary": "Creates or updates the ReturnDetail. Provide a valid existing returndetailid to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ReturnDetail/LoadReturnDetailsList",
+      "method": "POST",
+      "tags": [
+        "ReturnDetail"
+      ],
+      "summary": "Returns a list of ReturnDetailModelAPI",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/ReturnDetail/GetReturnDetail",
+      "method": "GET",
+      "tags": [
+        "ReturnDetail"
+      ],
+      "summary": "Returns an object ReturnDetailModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Search/Global",
+      "method": "GET",
+      "tags": [
+        "Search"
+      ],
+      "summary": "Performs a global search against the regional SearchDB SearchDocument index, scoped to the current instance, and filtered by the caller's contract access via fnAccessAllowed. (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/SystemLinks/Save",
+      "method": "POST",
+      "tags": [
+        "SystemLinks"
+      ],
+      "summary": "Creates or updates a SystemLinks record.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/SystemLinks/GetList",
+      "method": "GET",
+      "tags": [
+        "SystemLinks"
+      ],
+      "summary": "Return list of SystemLinks records",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/SystemLinks/SaveOrder",
+      "method": "POST",
+      "tags": [
+        "SystemLinks"
+      ],
+      "summary": "Saves order",
+      "responses": [
+        "200"
+      ]
+    },
+    {
+      "path": "/api/Return/SaveReturn",
+      "method": "POST",
+      "tags": [
+        "Return"
+      ],
+      "summary": "Creates or updates the Return. Provide a valid existing ReturnID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Return/LoadReturnsList",
+      "method": "POST",
+      "tags": [
+        "Return"
+      ],
+      "summary": "Returns a list of ReturnModelAPI object containing the contract details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Return/GetReturn",
+      "method": "GET",
+      "tags": [
+        "Return"
+      ],
+      "summary": "Returns an object ReturnAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/GetTagsForCategory",
+      "method": "POST",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Controller method to retrieve a list contract level categories applicable for the company",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/LoadTagsByCategory",
+      "method": "POST",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Controller method to retrieve a list of all tags for given categories",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/LoadTagList",
+      "method": "GET",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Controller method to retrieve a list of all tags",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/GetTag",
+      "method": "GET",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Controller method to retrieve a tag based on it's unique ID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/CreateTag",
+      "method": "POST",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Creates a tag.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/DeleteTag",
+      "method": "DELETE",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Deletes a tag.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Tag/UpdateTag",
+      "method": "POST",
+      "tags": [
+        "Tag"
+      ],
+      "summary": "Updates a tag.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/SecondaryActivity/LoadChanges",
+      "method": "GET",
+      "tags": [
+        "SecondaryActivity"
+      ],
+      "summary": "Load change logs associated to given ActivityScheduleID",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TagAssociation/GetTagAssociation",
+      "method": "GET",
+      "tags": [
+        "TagAssociation"
+      ],
+      "summary": "Controller action to return a list of tag associations based on referenceid and referencetype",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TagAssociation/RemoveTagAssociation",
+      "method": "POST",
+      "tags": [
+        "TagAssociation"
+      ],
+      "summary": "Remove tag association",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TagAssociation/CreateTagAssociation",
+      "method": "POST",
+      "tags": [
+        "TagAssociation"
+      ],
+      "summary": "TagAssociation_CreateTagAssociation",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/BulkCommunicate",
+      "method": "PUT",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Bulk communicate the TaskOrder draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/BulkDeleteDraft",
+      "method": "DELETE",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Bulk deletes the TaskOrder draft orders for given PK Array",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/SaveTaskOrder",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Creates a Task Order. Leave TaskOrderID blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/DeleteDraft",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Deletes Draft. (13)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/Import",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Imports series of an TaskOrder items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/RegisterListV2",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Loads a cutdown list of TaskOrder for Register lists (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/RegisterList",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Loads a cutdown list of TaskOrder for Register lists",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Returns a list of TaskOrderListAPI object for use in UI Selects and Dropdowns.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/LoadTaskOrdersList",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Returns a list of TaskOrderModelAPI",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/GetTaskOrder",
+      "method": "GET",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Returns an object TaskOrderModelAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskOrder/Update",
+      "method": "POST",
+      "tags": [
+        "TaskOrder"
+      ],
+      "summary": "Updates an existing Task Order record. this supercedes the Save command for edits",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Template/SaveTemplate",
+      "method": "POST",
+      "tags": [
+        "Template"
+      ],
+      "summary": "Creates or updates the Template. Provide a valid existing TemplateID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Template/ToSelectList",
+      "method": "GET",
+      "tags": [
+        "Template"
+      ],
+      "summary": "Returns a list of TemplateListAPI object for use in UI Selects and Dropdowns. This list is dependent on given CompanyID because not all templates are available for all companies",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Template/GetTemplate",
+      "method": "GET",
+      "tags": [
+        "Template"
+      ],
+      "summary": "Templates an object TemplateAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Template/LoadTemplatesList",
+      "method": "POST",
+      "tags": [
+        "Template"
+      ],
+      "summary": "Template_LoadTemplatesList",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/PutProfile",
+      "method": "PUT",
+      "tags": [
+        "User"
+      ],
+      "summary": "Allows the logged in user to update their profile basics.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/LoadUsersList",
+      "method": "POST",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns a list of User objects linked the the logged in user account in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/GetUserSupportWidgetToken",
+      "method": "GET",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns a list of User objects linked the the logged in user account.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/GetProfileMenu",
+      "method": "GET",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns an object UserModelAPI containing the loggedin users details. (1)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/GetProfileContractUser",
+      "method": "GET",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns an object UserModelAPI containing the loggedin users details. (GET)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/GetProfile",
+      "method": "GET",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns an object UserModelAPI containing the loggedin users details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/GetUser",
+      "method": "GET",
+      "tags": [
+        "User"
+      ],
+      "summary": "Returns an object UserModelAPI containing the specified users details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/User/UpdateRedirectedToConsentDate",
+      "method": "PUT",
+      "tags": [
+        "User"
+      ],
+      "summary": "Updates redirectedToConsentDate.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/UnifiedPlatform/AcademyGetLibraryItems",
+      "method": "GET",
+      "tags": [
+        "UnifiedPlatform"
+      ],
+      "summary": "Returns a bool indicating whether or not a user with the passed in email address exists in Academy if true, also returns a list of 10 library items",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/UnifiedPlatform/ReachbackGetLatestPosts",
+      "method": "GET",
+      "tags": [
+        "UnifiedPlatform"
+      ],
+      "summary": "Returns a bool indicating whether or not a user with the passed in email address exists in Reachback if true, also returns a list of the 10 lastest Reachback posts",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/UnifiedPlatform/GetFDInstances",
+      "method": "GET",
+      "tags": [
+        "UnifiedPlatform"
+      ],
+      "summary": "Returns a list of instance uris a FD user has access to",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/UnifiedPlatform/GetUnifiedProfileRedirectUrl",
+      "method": "POST",
+      "tags": [
+        "UnifiedPlatform"
+      ],
+      "summary": "UnifiedPlatform_GetUnifiedProfileRedirectUrl",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/SaveTaskNotification",
+      "method": "POST",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Creates or updates the Task Notification.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/LoadAccountTaskNotificationsList",
+      "method": "POST",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Returns a list of TaskNotificationModelAPI (POST)",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/PushTaskNotifications",
+      "method": "POST",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Returns a list of TaskNotificationModelAPI ?????",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/LoadTaskNotificationsList",
+      "method": "POST",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Returns a list of TaskNotificationModelAPI",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/GetTaskNotification",
+      "method": "GET",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Returns an object TaskNotificationModelAPI containing the tasknotification details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/TaskNotification/GetNoticeEmailDetails",
+      "method": "GET",
+      "tags": [
+        "TaskNotification"
+      ],
+      "summary": "Returns the details of emails sent to relevant users upon the communication of a notice",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/CreateWebHook",
+      "method": "POST",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Creates a new webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/DeleteWebHook",
+      "method": "DELETE",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Deletes a webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/GetWebHooksHistory",
+      "method": "GET",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Gets a list of webhook history by instance via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/GetWebHooks",
+      "method": "GET",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Gets a list of webhooks by instance via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/GetWebHook",
+      "method": "GET",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Gets a single webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/RestoreWebHook",
+      "method": "PATCH",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Restores a webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/PublishWebHook",
+      "method": "POST",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Send a payload to an active webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/WebHook/UpdateWebHook",
+      "method": "PUT",
+      "tags": [
+        "WebHook"
+      ],
+      "summary": "Updates an existing webhook via the webhook sender project",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Version/GetAPIVersion",
+      "method": "GET",
+      "tags": [
+        "Version"
+      ],
+      "summary": "Returns the current API version",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Workflow/SaveWorkflow",
+      "method": "POST",
+      "tags": [
+        "Workflow"
+      ],
+      "summary": "Creates or updates the Workflow. Provide a valid existing WorkflowID to update or leave blank to create.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Workflow/LoadWorkflowsList",
+      "method": "POST",
+      "tags": [
+        "Workflow"
+      ],
+      "summary": "Workflows a list of WorkflowModelAPI object containing the contract details in JSON format.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    },
+    {
+      "path": "/api/Workflow/GetWorkflow",
+      "method": "GET",
+      "tags": [
+        "Workflow"
+      ],
+      "summary": "Workflows an object WorkflowAPI containing the contract details.",
+      "responses": [
+        "200",
+        "400"
+      ]
+    }
+  ]
+}

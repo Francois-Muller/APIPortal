@@ -1,9 +1,16 @@
-This file explains how Visual Studio created the project.
+# Changelog
 
-The following steps were used to generate this project:
-- Create new ASP\.NET Core Web API project.
-- Update project file to add a reference to the frontend project and set SPA properties.
-- Update `launchSettings.json` to register the SPA proxy as a startup assembly.
-- Add `dockerfile` to set up docker build.
-- Add project to the startup projects list.
-- Write this file.
+## 0.3.1 — 2026-07-19
+
+- Updated the Portal health version to 0.3.1.
+- Retained the read-only ASP.NET Core host and unchanged database boundary.
+
+## 0.3.0 — 2026-07-19
+
+- Updated the Portal health version to 0.3.0.
+- Retained the read-only ASP.NET Core host and publish-time React build.
+- No database or QADBUtility integration was added.
+
+## 0.2.0 — 2026-07-19
+
+- Hosted the native React Framework Guide and published compiled assets into wwwroot.

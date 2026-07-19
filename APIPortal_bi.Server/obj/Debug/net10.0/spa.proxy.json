@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:56562",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Development\\Active Projects\\APIPortal_bi\\APIPortal_bi.Server\\..\\apiportal_bi.client",
+"WorkingDirectory": "C:\\Development\\Active Projects\\APIPortal_bi\\APIPortal_bi.Server\\../apiportal_bi.client/",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

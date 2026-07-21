@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageJsonName Condition="$(PackageJsonName) == ''">apiportal_bi.client</PackageJsonName>
     <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.3.12</PackageJsonVersion>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.3.13</PackageJsonVersion>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">tsc -b &amp;&amp; vite build</PackageJsonScriptsBuild>

@@ -1070,3 +1070,145 @@ ul.dont li:before{content:"×";position:absolute;left:2px;color:var(--red);font-
 @media(prefers-reduced-motion:reduce){
   .journey-step,.section-link-card{transition:none}
 }
+/* Beginner onboarding, application guides and terminal refinements — Portal v0.3.14 */
+.terminal-head{padding-right:44px}
+.copy-code-button{
+  top:4px;
+  right:6px;
+  width:30px;
+  min-width:30px;
+  height:30px;
+  min-height:30px;
+  gap:0;
+  border:0;
+  padding:0;
+  background:transparent;
+  color:#c9d7e2;
+  font-size:12px;
+}
+.copy-code-button:hover,
+.copy-code-button:focus-visible{border:0;background:rgba(255,255,255,.1);color:#fff}
+.copy-code-button.is-copied{border:0;background:transparent;color:#55d187}
+.copy-code-button.copy-error{border:0;background:transparent;color:#ff8b8b}
+.copy-code-button span{display:none}
+
+.terminal-block pre,
+.compact-terminal pre,
+.function-terminal pre,
+.flip-card .terminal-block pre{
+  min-height:0;
+  max-height:500px;
+  overflow-x:auto;
+  overflow-y:auto;
+}
+
+.setup-accordion-list,
+.guide-accordion-list{display:grid;gap:11px;margin-top:16px}
+.setup-accordion,
+.guide-accordion{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:13px;
+  background:#fff;
+}
+.setup-accordion[open],
+.guide-accordion[open]{box-shadow:0 8px 22px rgba(23,49,73,.08)}
+.setup-accordion>summary,
+.guide-accordion>summary{
+  display:grid;
+  grid-template-columns:auto 34px minmax(0,1fr) auto;
+  gap:11px;
+  align-items:center;
+  list-style:none;
+  padding:15px 16px;
+  background:linear-gradient(90deg,#fff,#f7fafc);
+  cursor:pointer;
+}
+.guide-accordion>summary{grid-template-columns:34px minmax(0,1fr) auto}
+.setup-accordion>summary::-webkit-details-marker,
+.guide-accordion>summary::-webkit-details-marker{display:none}
+.setup-accordion>summary:after,
+.guide-accordion>summary:after{
+  content:"+";
+  color:var(--cyan);
+  font-size:20px;
+  font-weight:900;
+}
+.setup-accordion[open]>summary:after,
+.guide-accordion[open]>summary:after{content:"−"}
+.setup-step-number{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:var(--navy);
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+}
+.setup-accordion>summary>i,
+.guide-accordion>summary>i{
+  width:32px;
+  height:32px;
+  display:grid;
+  place-items:center;
+  border-radius:9px;
+  background:var(--soft);
+  color:var(--cyan);
+  font-size:16px;
+}
+.setup-accordion>summary strong,
+.setup-accordion>summary small,
+.guide-accordion>summary strong,
+.guide-accordion>summary small{display:block}
+.setup-accordion>summary strong,
+.guide-accordion>summary strong{color:var(--navy);font-size:13px}
+.setup-accordion>summary small,
+.guide-accordion>summary small{margin-top:3px;color:var(--muted);font-size:10.5px;line-height:1.35}
+.setup-step-body,
+.guide-accordion>div{
+  padding:17px 18px 18px;
+  border-top:1px solid var(--line-soft);
+}
+.setup-step-body>p:first-child,
+.guide-accordion>div>p:first-child{margin-top:0}
+
+.novice-steps{display:grid;gap:8px;margin:12px 0 15px;padding-left:24px}
+.novice-steps li{padding-left:4px;color:#475467;font-size:12.5px;line-height:1.55}
+.novice-steps li::marker{color:var(--cyan);font-weight:900}
+.command-notes{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+  margin:10px 0 0;
+}
+.command-notes p{
+  margin:0;
+  border:1px solid var(--line);
+  border-radius:9px;
+  padding:10px 11px;
+  background:#f8fafc;
+  color:#475467;
+  font-size:10.8px;
+}
+.novice-concept-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.novice-concept-grid .mini-card{min-height:150px}
+
+@media(max-width:1180px){
+  .novice-concept-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .setup-accordion>summary{grid-template-columns:32px 30px minmax(0,1fr)}
+  .guide-accordion>summary{grid-template-columns:30px minmax(0,1fr)}
+  .setup-accordion>summary:after,
+  .guide-accordion>summary:after{display:none}
+  .setup-step-number{width:30px;height:30px}
+  .setup-accordion>summary>i,
+  .guide-accordion>summary>i{width:29px;height:29px;font-size:14px}
+  .setup-step-body,
+  .guide-accordion>div{padding:14px}
+  .command-notes,
+  .novice-concept-grid{grid-template-columns:1fr}
+  .novice-concept-grid .mini-card{min-height:0}
+}

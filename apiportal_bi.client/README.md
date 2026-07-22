@@ -1,6 +1,6 @@
-# FastDraft API Portal React client v0.3.1
+# FastDraft API Automation Portal React client v0.3.14
 
-The client is the native React implementation of the FastDraft API Automation Framework Guide. It contains nineteen source-evidence-reviewed sections, collapsible navigation, section search, accessible flip cards and the searchable 94-function inventory.
+The client is the native React implementation of the FastDraft API Automation Portal and its framework guide. It contains thirty-nine source-evidence-reviewed sections, collapsible navigation, section search, accessible flip cards and the searchable 94-function inventory.
 
 ## Commands
 

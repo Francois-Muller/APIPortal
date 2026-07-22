@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.14 — 2026-07-21
+
+- Renamed the product to FastDraft API Automation Portal and the overview navigation item to Framework Overview.
+- Moved the standalone Architecture content into Getting started and removed the redundant navigation page.
+- Rebuilt Clean workstation sequence as an expandable novice onboarding flow covering Git, GitHub SSH keys, NVM/Node.js, Bruno, LastPass, Docker, SQL Server/SSMS, repository cloning and the clean framework baseline.
+- Renamed Development guides to Applications Guides and rewrote the application pages with plain-English concepts, guided tasks, command explanations and safer beginner workflows.
+- Simplified terminal copy controls to icon-only states and allowed terminal content to grow naturally up to a 500px vertical-scroll threshold.
+
 ## 0.3.11 — 2026-07-20
 
 - Added a new Development and application guides navigation group before Build and use.

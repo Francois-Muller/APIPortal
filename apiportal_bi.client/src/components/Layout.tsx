@@ -31,7 +31,7 @@ export default function Layout({ active, setActive, titles, children }: LayoutPr
 
   useEffect(() => {
     setExpanded((current) => new Set([...current, activeGroup]));
-    document.title = `${titles[active]} | FastDraft API Portal`;
+    document.title = `${titles[active]} | FastDraft API Automation Portal`;
   }, [active, activeGroup, titles]);
 
   useEffect(() => { if (searchOpen) searchInput.current?.focus(); }, [searchOpen]);
@@ -57,7 +57,7 @@ export default function Layout({ active, setActive, titles, children }: LayoutPr
     <aside className={`sidebar ${mobileOpen ? "open" : ""}`} aria-label="Portal navigation">
       <div className="brand-block">
         <div className="brand-line">Built Intelligence | Quality Assurance</div>
-        <div className="brand-title-row"><Icon name="fa-brands fa-algolia" className="brand-title-icon" /><h1>FastDraft API Portal</h1></div>
+        <div className="brand-title-row"><Icon name="fa-brands fa-algolia" className="brand-title-icon" /><h1>FastDraft API Automation Portal</h1></div>
         <div className="brand-chips"><span>Portal v0.1.1</span><span className="source-pill pass"><Icon name="fa-solid fa-circle-check" /> Source validated</span></div>
       </div>
 

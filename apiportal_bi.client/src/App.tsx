@@ -8,7 +8,7 @@ const SIDEBAR_STORAGE_KEY = 'fastdraft-portal-sidebar-v1';
 
 const GROUP_ICONS: Readonly<Record<string, string>> = {
   'Start here': 'fa-solid fa-route',
-  'Development guides': 'fa-solid fa-book-open-reader',
+  'Applications Guides': 'fa-solid fa-book-open-reader',
   'API Automation development': 'fa-solid fa-code',
   'Build and use': 'fa-solid fa-person-digging',
   'Evidence and quality': 'fa-solid fa-clipboard-check',
@@ -347,7 +347,7 @@ function App() {
 
   useEffect(() => {
     window.history.replaceState(null, '', `#${activeSection.id}`);
-    document.title = `${activeSection.title} | FastDraft API Portal`;
+    document.title = `${activeSection.title} | FastDraft API Automation Portal`;
     viewportRef.current?.scrollTo({ top: 0, behavior: 'auto' });
 
     window.requestAnimationFrame(() => {
@@ -433,7 +433,7 @@ function App() {
         button.className = 'copy-code-button';
         button.setAttribute('aria-label', 'Copy code');
         button.title = 'Copy code';
-        button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i><span>Copy</span>';
+        button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i>';
         header.appendChild(button);
       });
     };
@@ -453,22 +453,22 @@ function App() {
         button.classList.add('is-copied', 'copy-pop');
         button.setAttribute('aria-label', 'Code copied');
         button.title = 'Copied';
-        button.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i><span>Copied</span>';
+        button.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i>';
         timers.push(window.setTimeout(() => button.classList.remove('copy-pop'), 320));
         timers.push(window.setTimeout(() => {
           button.classList.remove('is-copied');
           button.setAttribute('aria-label', 'Copy code');
           button.title = 'Copy code';
-          button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i><span>Copy</span>';
+          button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i>';
         }, 1450));
       } catch {
         button.classList.add('copy-error', 'copy-pop');
         button.setAttribute('aria-label', 'Copy failed');
-        button.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i><span>Retry</span>';
+        button.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>';
         timers.push(window.setTimeout(() => {
           button.classList.remove('copy-error', 'copy-pop');
           button.setAttribute('aria-label', 'Copy code');
-          button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i><span>Copy</span>';
+          button.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i>';
         }, 1450));
       }
     };
@@ -662,9 +662,9 @@ function App() {
               </button>
             </div>
           </div>
-          <h1 title="FastDraft API Automation Framework Portal">
+          <h1 title="FastDraft API Automation Portal">
             <i className="fa-brands fa-algolia guide-brand-icon" aria-hidden="true" />
-            <span>FastDraft API Automation Framework Portal</span>
+            <span>FastDraft API Automation Portal</span>
           </h1>
         </div>
 
@@ -753,7 +753,7 @@ function App() {
             <span className="footer-separator" aria-hidden="true">|</span>
             <span>Framework v0.4.0</span>
             <span className="footer-separator" aria-hidden="true">|</span>
-            <span>Portal v0.3.13</span>
+            <span>Portal v0.3.14</span>
           </div>
         )}
       </aside>
